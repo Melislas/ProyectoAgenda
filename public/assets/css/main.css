@@ -1,0 +1,142 @@
+@import url("components/buttons.css");
+@import url("components/colors.css");
+@import url("components/general.css");
+
+body{
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    
+}
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
+   
+}
+
+.image-container {
+    width: 25%; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box; 
+}   
+   
+.image-container img {
+    display: block; 
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Posicionamiento de la imagen desplazado */
+    top: -20px;
+    left: 20px; 
+    
+    position: relative; 
+    z-index: 2; 
+    margin: 0; 
+    padding: 0; 
+    border: 1px solid var(--color-1); 
+}
+
+.background-box {
+    position: absolute; 
+    width: auto; 
+    height: auto; 
+    background-color: var(--color-2); 
+    z-index: 1; 
+}
+
+
+.text-container{
+    width: 75%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 60px;
+}
+
+.slogan{
+    font-family: "Oregano";
+    font-weight: 400;
+    color: var(--color-2);
+    font-size: 30px;
+}
+
+.info-container{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 60px;  
+    height: fit-content;
+}
+
+.client-data-container, .professional-data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+
+}
+
+.client-data-container p, .professional-data-container p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.client-data-container{
+   color: var(--color-1);
+}
+
+.professional-data-container{
+    color: var(--color-2)
+}
+
+
+/*------------------- RESPONSIVE ------------- */
+
+
+@media (min-width: 1366px) {
+  .logo  { font-size: 72px; }   /* 60 → 72  */
+  .slogan{ font-size: 36px; }   /* 30 → 36  */
+
+  .client-data-container p,
+  .professional-data-container p {
+    font-size: 22px;                           
+  }   /* 20 → 22  */
+
+}
+
+/* ------------------------------------------------------------------
+   ≥ 1920 px  (monitores 1080p) → se amplía +40 % aprox.
+   ------------------------------------------------------------------*/
+@media (min-width: 1920px) {
+  .logo  { font-size: 84px; }   /* 60 → 84  */
+  .slogan{ font-size: 42px; }   /* 30 → 42  */
+
+  .client-data-container p,
+  .professional-data-container p {
+    font-size: 28px;                            
+  }  /* 20 → 28  */
+
+}

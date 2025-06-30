@@ -1,0 +1,36 @@
+/* ------------ Fuentes ------------ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+@font-face {
+  font-family: 'Angelica';
+  src: url('../../fonts/Angelica.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------ Colores ------------ */
+@import url('./colors.css');
+
+/* ------------ Codigo general ------------ */
+*{
+    font-family: 'DM Sans';
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    font-family: 'Angelica', cursive;
+    color: var(--color-1);
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.slogan{
+    font-family: 'Oregano', cursive;
+}
