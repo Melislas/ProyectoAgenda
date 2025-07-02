@@ -1,0 +1,277 @@
+@import url("components/buttons.css");
+@import url("components/colors.css");
+@import url("components/general.css");
+@import url("components/header.css");
+@import url("components/card.css");
+
+body{
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+.main-container{
+    background-color: var(--color-4);
+    min-width: 1200px;
+    flex-direction: row;
+    width: 90%;
+    height: 560px;
+    box-sizing: border-box;
+    padding: 5px 20px 20px;
+    box-shadow:  2px 5px 5px var(--gray-color-1);
+
+    overflow-y: auto;
+    overflow-x: auto;
+        
+}
+
+.title-container{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.title-container h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+.addBtn{
+    width: fit-content;
+    gap: 0 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.plus-add{
+    font-size: 22px;
+}
+
+/* CARTAS */
+
+.card-container{
+    display: flex;
+    width: 100%;
+    gap: 30px 0px;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Modal */
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-4);
+  padding: 12px 24px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  height: 90%;
+  max-height: 600px;
+}
+
+.close-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.close-btn {
+  all: unset;
+  width: fit-content;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-header{
+    margin-bottom: 10px;
+}
+
+.modal-header h2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-1);
+}
+
+
+.modal-header h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-color-1);
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;          /* llena el alto restante */
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.filters-container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.filters-container select, .filters-container input{
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--color-2);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 1px 0 2px var(--gray-color-1);
+}
+
+
+/* Cartas de profesionales */
+
+.professional-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+    
+    
+    max-height: 100%;         /* no crece más que el body */
+    overflow-y: auto;         /* genera el scroll vertical */
+}
+
+.professional-card {
+    all: unset;
+    background: var(--color-4);
+    border-radius: 12px;
+    box-shadow: 1px 0 2px var(--gray-color-1);
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border: 1px solid var(--color-3);
+}
+
+.professional-card:hover {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px) ;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-3);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.professional-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 6px;
+}
+
+.professional-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-1);
+    margin: 0;
+}
+
+.professional-badge {
+    background-color: var(--color-4);
+    color: var(--color-2);
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    border: 1px solid var(--color-2);
+}
+
+.arrow {
+    color: var(--color-1);
+    font-size: 25px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0px 10px;
+
+}
+
+
+/* ------------- RESPONSIVE ----------- */
+
+@media (min-width: 1920px)  {
+    .main-container{
+        gap: 20px;
+        height: 870px;
+    }
+    
+}
+
+@media (max-width: 1200px)  {
+    .main-container{
+        min-width: 94%;
+        gap: 20px;
+        height: auto;
+        padding: 5px 10px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card-container{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 965px)  {
+     .card-container{
+          display: flex;
+       justify-content: center;
+    }
+}
+        

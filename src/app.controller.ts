@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, Query, Res } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseIntPipe, Post, Query, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { join } from 'path';
 
@@ -27,6 +27,16 @@ export class AppController {
     return res.sendFile(join(__dirname, '..', 'public', 'profesional', 'index.html'));
   }
   
+  @Get('/cliente/professional/:id')
+  clienteProfesional(
+    @Res() res: Response, 
+    @Param('id', ParseIntPipe) id: number,
+  ) {
+    console.log(id);
+    return res.sendFile(join(__dirname, '..', 'public', 'cliente', 'profesional.html'));
+  }
+
+
   // ----------------------------------------------------------------------
   // ------------------ Migrar luego esta logica al AUTH ------------------
   // ----------------------------------------------------------------------
@@ -34,7 +44,7 @@ export class AppController {
   //Login page al enviar un post
   @Post('/login')
   login(@Body('type') type: string, @Res() res: Response) {
-   
+
   if (type == 'client') {
     return res.redirect('/cliente');        
   }

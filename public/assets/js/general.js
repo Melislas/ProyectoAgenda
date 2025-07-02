@@ -1,4 +1,4 @@
-let form = document.querySelector('.form-container form');
+let form = document.querySelector('.form-container');
 
 
 form.addEventListener('submit', (e) => {
@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
     let hiddenInput = document.getElementById('userType');
     hiddenInput.value = type;
     
+    console.log('Tipo enviado:', type);
     //-- Envio el formulario luego de concatenar el tipo
     form.submit();
 })
