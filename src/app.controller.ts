@@ -32,7 +32,7 @@ export class AppController {
     @Res() res: Response, 
     @Param('id', ParseIntPipe) id: number,
   ) {
-    console.log(id);
+    
     return res.sendFile(join(__dirname, '..', 'public', 'cliente', 'profesional.html'));
   }
 

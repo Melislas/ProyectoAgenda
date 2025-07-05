@@ -1,16 +1,20 @@
 // Abrir Modal para agregar turno
 let openModalBtn = document.querySelector('.addBtn');
 
-openModalBtn.addEventListener('click', () => {
-    let modal = document.querySelector('.modal');
-    modal.style.display = 'flex';
-})
+if (openModalBtn) {
+    openModalBtn.addEventListener('click', () => {
+        let modal = document.querySelector('.modal');
+        modal.style.display = 'flex';
+    })
+}
 
 let closeModalBtn = document.querySelector('.close-btn');
 closeModalBtn.addEventListener('click', () => {
     let modal = document.querySelector('.modal');
     modal.style.display = 'none';
 })
+
+
 
 
 

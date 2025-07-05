@@ -3,6 +3,7 @@
 @import url("components/general.css");
 @import url("components/header.css");
 @import url("components/card.css");
+@import url("components/add-turn-modal.css");
 
 body{
     background-color: var(--color-3);
@@ -10,7 +11,8 @@ body{
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    gap: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -23,7 +25,7 @@ body{
     box-sizing: border-box;
     padding: 5px 20px 20px;
     box-shadow:  2px 5px 5px var(--gray-color-1);
-
+    margin-top: 20px;
     overflow-y: auto;
     overflow-x: auto;
         
@@ -274,4 +276,213 @@ body{
        justify-content: center;
     }
 }
-        
+
+
+/* ----------------------------------------------------------------------------  */
+/* --------------------------  Vista: Profesional ----------------------------- */
+/* ----------------------------------------------------------------------------  */
+
+.professional__main-container{
+    min-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0 15px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px 30px 20px;
+    
+    overflow: hidden;
+}
+
+.professional__presentation-container{
+    width: 25%;
+    min-height: 470px;
+    background-color: var(--color-4);
+    box-shadow:  2px 5px 5px var(--gray-color-1);
+}
+
+
+.professional__presentation-img-container{
+  width: 150px;
+  height: 150px;
+  margin: -80px auto;  
+  border-radius: 50%;
+  overflow: hidden;       
+  box-shadow: 0 0 0 4px var(--color-4);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.professional__presentation-info-container{
+    margin-top: 70px;
+    height: 100%;  
+    width: 100%;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+     flex: 1 1 auto;            /* ocupa el resto de alto */
+}
+
+.professional__presentation-name{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-1);  
+    text-align: center;
+    margin: 5px 0px 10px;
+}
+
+.professional__presentation-description{
+    margin: 0;           /* sin márgenes extra */
+    width: 100%;
+    max-height: 340px;
+  
+    font-size: 16px;
+    color: var(--color-2);  
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;   /* agrega "…" */
+    
+}
+
+
+
+/*  DATA */
+.professional__data-container{
+    width: 75%;
+    height: 100%;
+    background-color: var(--color-4);
+    box-shadow:  2px 5px 5px var(--gray-color-1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.professional__data-contact{
+    width: 100%;
+    height: fit-content;
+     border-bottom: 2px solid var(--color-3);
+}
+
+.professional__data-contact-title{
+    margin-left: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--color-1);
+    width: 100%;
+ 
+}
+
+.professional__data-contact-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.professional__data-contact-item span{
+    margin-left: 5px;
+    width: 25px;
+    text-align: center;
+}
+
+.professional__data-contact-item p{
+    font-size: 16px;
+    margin: 0px 10px;
+    color:var(--color-1)
+}
+
+/* Tabla horarios */
+
+.professional__data-horary{
+    width: 100%;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container{
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  
+}
+
+table{
+    
+    width: 100%;
+    border-collapse: collapse;  
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+  
+
+}
+
+thead{
+    background-color: var(--color-3);
+    color: var(--color-1);
+    padding: 10px 0;
+    border: 1px solid var(--gray-color-1);
+}
+
+
+thead tr th{
+    font-weight: 500;
+    padding: 5px 0;
+    
+}
+
+tbody tr td{
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr {
+    border: 1px solid var(--color-3);
+}
+
+/*  Elimino la linea del primer hijo */
+tbody tr:first-child{
+    border-top: none;
+}
+
+.professional__data-add-turn-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 10px;
+    flex: 1 1 auto; /* o simplemente: flex: 1; */
+    min-height: 0;  /* ← importante en layouts flex */
+    margin-top: 10px;
+    padding: 30px 0 0;
+}
+
+
+.add-turn-btn{
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+

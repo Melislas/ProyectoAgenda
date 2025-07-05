@@ -4,9 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/cliente.css">
+    <title> AgendaPro - Profesional </title>
+    <link rel="stylesheet" href="/assets/css/cliente.css" />
 </head>
+
 <body>
-    <h1> PEPE </h1>
+    
+    <div class="header-container">
+        <div class="logo-container">
+            <a class="logo" href="/cliente"> AgendaPro </a>
+        </div>
+
+        <div class="profile-container">
+            <a href="#">
+                <img src="/assets/img/profile-img.png" class="profile-img">
+            </a>
+        </div>
+    </div>
+
+    <div class="professional__main-container">
+
+        <div class="professional__presentation-container">
+            <div class="professional__presentation-img-container">
+                <img src="/assets/img/medico-img.jpg" alt="Dr. Torrado" class="profile-img" />
+            </div>
+
+            <div class="professional__presentation-info-container">
+                <h2 class="professional__presentation-name"> Nombre Profesional </h2>
+                <p class="professional__presentation-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde eos explicabo similique sit vitae dolorem officiis accusamus aliquam cupiditate, deserunt perspiciatis beatae est voluptate error nulla facere possimus, natus voluptates.
+                    Omnis maiores corrupti fugit aliquid ipsum ad sunt officiis esse reiciendis vero cupiditate, dolorum quae ducimus porro dolores alias, cumque quibusdam praesentium. Amet fuga est iusto veritatis ratione ducimus at.
+                    Ipsum quibusdam fugiat quaerat, similique deleniti perspiciatis vero atque ullam, tempore harum nobis quidem debitis consectetur, cumque fugit quas veniam minima nihil nostrum maiores beatae et repellendus! Ratione, voluptatibus cupiditate.
+                    Impedit nihil tempore quaerat debitis sint repellat eaque maiores modi consectetur sapiente dolorum voluptates voluptatibus exercitationem corporis soluta hic provident autem, iste eos accusamus cum atque deleniti tempora architecto? Qui.
+                    Saepe necessitatibus tempora reprehenderit veritatis molestias esse, quasi quisquam numquam excepturi ipsam eveniet autem ipsum deleniti ad facere harum! Architecto natus quis sequi laudantium perspiciatis iste non, ullam accusamus atque!
+                    Obcaecati nihil ut et atque id tenetur! Ipsam cumque tempore ut optio alias cupiditate, nobis accusamus quisquam accusantium, id aperiam pariatur assumenda neque non maiores? Est facere nulla accusantium omnis?
+                    Minima molestiae vitae nobis et veniam culpa vero eveniet voluptatum aspernatur eos, sint sed fuga assumenda a magnam, in eum quasi earum! Maxime, nemo. Ipsam quasi enim est quos sunt!
+                    Sunt esse mollitia aliquam corrupti delectus vel labore illum voluptas natus. Officia qui quaerat iure dolore veritatis voluptate omnis praesentium nisi, quasi distinctio! Dolores, vero debitis qui nulla molestias eligendi!
+                    Tenetur nisi minus laudantium qui? Veritatis explicabo vitae non. Repellat earum delectus illo ab dignissimos magni impedit quo, rem sunt. Itaque molestias nesciunt nostrum temporibus quisquam assumenda, delectus esse! Necessitatibus!
+                    Cum facilis sit aut mollitia, sint maxime quia earum dicta magnam eius porro omnis est, quidem harum exercitationem error consequatur aperiam deleniti! Animi sit, maiores similique fugiat velit quisquam consequatur?
+                </p>
+            </div>
+        </div>
+
+        <div class="professional__data-container">
+            <div class="professional__data-contact">
+                <h2 class="professional__data-contact-title"> Datos de Contacto: </h2>
+
+                <div class="professional__data-contact-item">
+                    <span>📞</span>
+                    <p>2284 123456</p>
+                </div>
+            
+                <div class="professional__data-contact-item">
+                    <span>✉️</span>
+                    <p>alejandro@gmail.com</p>
+                </div>
+
+                <div class="professional__data-contact-item">
+                    <span>📍</span>
+                    <p>Calle 123, Avenida Falsa 54</p>
+                </div>
+
+            </div>
+
+            <div class="professional__data-horary">
+                <h2 class="professional__data-contact-title"> Horarios: </h2>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Lunes </th>
+                                <th> Martes</th>
+                                <th> Miercoles </th>
+                                <th> Jueves </th>
+                                <th> Viernes </th>
+                                <th> Sabado </th>
+                                <th> Domingo </th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="hours-table-body">
+                            <tr>
+                                <td> 8:00 - 11:00 </td>
+                                <td> 12:00 - 19:00</td>
+                                <td> 11:00 - 19:00</td>
+                                <td> 12:00 - 15:00</td>
+                                <td> 13:00 - 19:00</td>
+                                <td> 14:00 - 18:00</td>
+                                <td> - </td>
+                            </tr>
+
+                            <tr>
+                                <td> 14:00 - 18:00 </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> 17:00 - 20:00</td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="professional__data-add-turn-container">
+                    <button class="btn secondary-btn add-turn-btn">
+                        📅 Añadir turno
+                    </button>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </div>
+  
+    <div class="add-turn-modal" id="add-turn-modal">
+        <div class="add-turn-modal-content">
+            
+            <div class="add-turn-modal-header">
+                 <div class="close-btn-container">
+                    <button class="close-btn">&times;</button>
+                </div>    
+                <h2> Agendar cita </h2>
+                <h3> Selecciona una fecha y hora para tu consulta </h3>
+            </div>
+
+            <div class="add-turn-modal-body">
+                <div class="day-container">
+                     <label>📅 Fecha</label>
+                     <input type="date" class="date-input" id="fecha" placeholder="Seleccione una fecha">
+                </div>
+
+                <div class="hours-container">
+                    <span>🕐 Horarios Disponibles</span>
+                    <div class="time-container">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="add-turn-modal-footer">
+                <div class="add-turn-info">
+                    <div>• Cada turno tiene una duración de 1 hora</div>
+                    <div>• Puedes cancelar o reprogramar hasta 24 horas antes</div>
+                </div>
+
+                <div class="add-turn-buttons">
+                    <button class="btn secondary-btn get-date-button"> Agendar Cita </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/assets/js/add-turn.js"> </script>
 </body>
