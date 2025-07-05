@@ -29,6 +29,18 @@
     }
 }
 
+.outlined-primary-btn{
+    background-color: var(--color-4);
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    
+    &:hover{
+        background-color: var(--color-1);
+        color: var(--color-4);
+    }
+}
+
+
 /* ------------------------------------------------------------------
    ≥ 1920 px  (monitores 768)
    ------------------------------------------------------------------*/

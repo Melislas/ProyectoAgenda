@@ -1,15 +1,20 @@
-let addTurnBtn = document.querySelector('.add-turn-btn');
+let updateBtns = document.querySelectorAll('.update-turn-btn');
 
-if (addTurnBtn) {
-    addTurnBtn.addEventListener('click', () => {
+
+updateBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        let turnId = e.target.dataset.id;
+        console.log(turnId);
+        
         let modal = document.querySelector('.add-turn-modal');
         modal.style.display = 'flex';
-    })
+    });
+    
+});
 
-}
 
-let closeModalBtn = document.querySelector('.close-btn');
-closeModalBtn.addEventListener('click', () => {
+let closeUpdateModal = document.querySelector('.close-update-btn');
+closeUpdateModal.addEventListener('click', () => {
 
     let addTurnModal = document.querySelector('.add-turn-modal');
     addTurnModal.style.display = 'none';

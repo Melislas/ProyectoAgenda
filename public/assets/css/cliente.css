@@ -4,6 +4,7 @@
 @import url("components/header.css");
 @import url("components/card.css");
 @import url("components/add-turn-modal.css");
+@import url("components/cancel-turn-warning.css");
 
 body{
     background-color: var(--color-3);
@@ -106,7 +107,7 @@ body{
     width: 100%;
 }
 
-.close-btn {
+.close-btn, .close-update-btn{
   all: unset;
   width: fit-content;
   font-size: 25px;
@@ -271,9 +272,14 @@ body{
 }
 
 @media (max-width: 965px)  {
+     .body{
+        overflow-y: auto;
+     }
+
      .card-container{
-          display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
+        gap: 25px 10px;
     }
 }
 

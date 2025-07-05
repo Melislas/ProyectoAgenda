@@ -66,5 +66,67 @@
         </div>
     </div>
 
-    <script src="../assets/js/client.js"> </script>
+
+    <!-- MODAL DE REPROGRAMAR -->
+
+    <div class="add-turn-modal" id="add-turn-modal">
+        <div class="add-turn-modal-content">
+            
+            <div class="add-turn-modal-header">
+                 <div class="close-btn-container">
+                    <button class="close-update-btn">&times;</button>
+                </div>    
+                <h2> Agendar cita </h2>
+                <h3> Selecciona una fecha y hora para tu consulta </h3>
+            </div>
+
+            <div class="add-turn-modal-body">
+                <div class="day-container">
+                     <label>📅 Fecha</label>
+                     <input type="date" class="date-input" id="fecha" placeholder="Seleccione una fecha">
+                </div>
+
+                <div class="hours-container">
+                    <span>🕐 Horarios Disponibles</span>
+                    <div class="time-container">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="add-turn-modal-footer">
+                <div class="add-turn-info">
+                    <div>• Cada turno tiene una duración de 1 hora</div>
+                    <div>• Puedes cancelar o reprogramar hasta 24 horas antes</div>
+                </div>
+
+                <div class="add-turn-buttons">
+                    <button class="btn secondary-btn get-date-button"> Agendar Cita </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL PARA CANCELAR -->
+    <div class="cancel-modal" id="modal">
+        <div class="cancel-modal-content">  
+            
+            <input type="hidden" value="" id="turn-id">
+            
+            <h2> ¿Esta seguro/a que desea cancelar el turno? </h2>
+            
+            <div class="cancel-turn-buttons">
+                <button class="btn outlined-primary-btn accept-cancel-turn-btn" data-id="1"> Cancelar </button>
+                <button class="btn secondary-btn close-cancel-turn-btn"> Conservar el turno </button>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="/assets/js/client.js"> </script>
+    <script src="/assets/js/update-turn.js"> </script>
+    <script src="/assets/js/cancel-turn.js"> </script>
 </body>

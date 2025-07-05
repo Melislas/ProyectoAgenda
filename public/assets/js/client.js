@@ -82,11 +82,11 @@ for (let i = 0; i < 3; i++) {
     <div class="card-line"> </div>
 
     <div class="card-buttons">
-        <button class="btn primary-btn" onclick="cancelarCita()">
-            <span class="btn-icon">✕</span>
+        <button class="btn primary-btn cancel-turn-btn" data-id="${i}">
+            <span class="btn-icon" >✕</span>
             Cancelar
         </button>
-        <button class="btn secondary-btn" onclick="reprogramarCita()">
+        <button class="btn secondary-btn update-turn-btn" data-id="${i}">
             <span class="btn-icon">↻</span>
             Reprogramar
         </button>
