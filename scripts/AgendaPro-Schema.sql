@@ -69,6 +69,7 @@ CREATE TABLE turno (
     fecha          DATE NOT NULL,
     hora           TINYINT UNSIGNED NOT NULL,
     lugar          VARCHAR(150),
+    estado         ENUM('pendiente','confirmado','cancelado','concluido') NOT NULL,
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_usuario)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
