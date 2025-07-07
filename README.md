@@ -39,7 +39,9 @@ Los tipos de usuarios que puedes utilizar son: **Cliente** o **Profesional**.
 ### 🚀 Correr en ambiente desarrollo
        1. Asegurarse de estar en la carpeta raiz del proyecto.
        2. Ejecutar en la terminal "npm run start:dev"
-       3. Abrir el navegador e ir a "http://localhost:3000/" (puede reemplazar el puerto en "main.ts", o en el archivo ".env")
+       3. Abrir el navegador e ir a "http://localhost:3000/" 
+
+*Opcional reemplazar el puerto en "main.ts", o en el archivo ".env"*
 
 ##
 ### 🌟 Contribuciones
