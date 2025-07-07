@@ -1,4 +1,4 @@
-![Logo de AgendaPro](assets/img/readme-header.png)
+![Logo de AgendaPro](/public/assets/img/readme-header.png)
 
 ### 📝 Descripción.
 AgendaPro es una plataforma integral para la gestión de turnos con profesionales de distintas áreas (médicos, abogados, psicólogos, entre otros). 
